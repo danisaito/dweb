@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Marilia Mendonça</title>
+        <meta name="viewport" content=" width=device-width,initial-scale = 1">     
+        <link rel="stylesheet" href="intex.html">  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="UTF-8" ></script>  
+</head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+<header>
+    <nav class="navbar">
+    <div class="menu-btn">
+    <i class="fas fa-bars"></i>
+</div>
+    <div class="side-bar active">
+    <div class="close-btn">
+<i class="fas fa-times"></i>
+    </div>
+<div class="menu">
+    <div class="item"><a href="intex.html">Inicio</a></div>
+    <div class="item"><a href="biografia.html">Biografia</a></div>
+    <div class="item"><a href="discografia.html">Discografia</a></div>
+    <div class="item"><a href="fotos.html">Fotos</a></div>
+    <div class="item"><a href="contato.html">Contatos</a></div>
+    </header>
+    </nav>
+    
+<body class="fotos">
+    <h1 class="t1">FOTOS</h1>
+    <nav id="coluna3">
+<a href="familia.html"><img src="img/familia.png" class="s"></a>
+    <h2 class="t3">Família</h2>   
+<a href="show.html"><img src="img/shows.png" class="s"></a>
+    <h2 class="t3">Shows</h2>
+    </nav>
+
+    <nav id="coluna4">
+<a href="amigos.html"><img src="img/montagem.png" class="t"></a>
+    <h2 class="t3">Amigos</h2>
+    </nav>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+      $('.menu-btn').click(function(){
+        $('.side-bar').addClass('active');
+        $('.menu-btn').css("visibility", "hidden");
+      });
+
+      $('.close-btn').click(function(){
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css("visibility", "visible");
+      });
+
+    });
+</script>
+    </body>
+</html>
