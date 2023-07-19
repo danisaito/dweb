@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+:root {
+    --maincolor: #ffffff;
+    --HeightHeader: 2vw;
+}
+
+* {
+    border: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0;
+    transition: all .5s ease;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 0.05vh;
+    outline: none;
+    border: 0;
+    user-select: none;
+    padding: 1px;
+}
+
+.parallax-text {
+    padding: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: 200;
+    font-size: 15pt;
+}
+
+.parallax-textbio {
+    padding: 0px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: 200;
+    font-size: 15pt;
+}
+
+.h1{
+    width: 350px;
+    min-height: 32px;
+    margin: auto;
+    position: relative;
+    left: auto;
+    top: 250px;
+    padding: 20px;
+    background-color: rgb(5, 5, 5);
+    color: rgb(204, 0, 0);
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: 600;
+    font-size: 45pt;
+    text-align: center;
+}
+
+.parallax-3{
+    width: 100%;
+    height: 600px;
+    background-image: url('../ig/2020.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.parallax-2{
+    width: 100%;
+    height: 5000px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-color: rgb(0, 0, 0);
+}
+
+.parallax-1{
+    width: 100%;
+    height: 900px;
+    background-image: url('/imagens/fundo\ azul.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+    
+.parallax-0{
+    width: 100%;
+    height: 600px;
+    background-image: url('/imagens/fundo\ azul.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-color: rgba(49, 44, 44, 0.781);
+}
+
+.h2{
+    font-size: 1.5vw;
+
+}
+
+.h3{
+    width: 200px;
+    min-height: 33px;
+    margin: auto;
+    position: relative;
+    left: 5vw;
+    top: 1320px;
+    padding: 10px;
+    background-color: rgba(184, 179, 179, 0.685);
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20pt;
+    text-align: center;
+
+}
+.p{
+    color: #ffffff;
+    font-size: 1.5vw;
+    
+}
+
+.nomec{
+    top: 42vw;
+    left: 2vw;
+    font-size: 40pt;
+    position: relative;
+    color: #ffffff;
+
+}
+
+.nomec1{
+    top: 41.8vw;
+    left: 2vw;
+    font-size: 15pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.biografia{
+    top: 38.8vw;
+    left: 50vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.premiacoes{
+    top: 37vw;
+    left: 60vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.discografias{
+    top: 35.2vw;
+    left: 70vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.fotografias{
+    top: 33.4vw;
+    left: 82vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.texto1{
+    top: 3vw;
+    left: 0vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.texto2{
+    top: 3vw;
+    left: 0vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.texto3{
+    top: 3vw;
+    left: 0vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.biografia2{
+    top: 10vw;
+    left: 0vw;
+    font-size: 30pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.texto4{
+    top: 11vw;
+    left: 0vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.euchorao{
+    top: 21.5vw;
+    left: 2vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.imagem1{
+
+    margin-left:  0vw;
+    padding: 0;
+    opacity: 5;
+    position: absolute;
+    left: 5vw;
+    top: 120vw;
+    width: 18vw;
+    height: 16vw; 
+
+}
+
+.imagem2{
+
+    margin-left:  0vw;
+    padding: 0;
+    opacity: 10;
+    position: absolute;
+    left: 5vw;
+    top: 137vw;
+    width: 18vw;
+    height: 16vw; 
+
+}
+
+.imagem3{
+
+    margin-left:  0vw;
+    padding: 0;
+    opacity: 10;
+    position: absolute;
+    left: 25vw;
+    top: 126vw;
+    width: 18vw;
+    height: 16vw; 
+
+}
+
+.positividade{
+    top: 23.5vw;
+    left: 22vw;
+    font-size: 15pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.positividade2{
+    top: 23.5vw;
+    left: 22vw;
+    font-size: 15pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.imagem4{
+
+    margin-left:  0vw;
+    padding: 0;
+    opacity: 10;
+    position: absolute;
+    left: 45vw;
+    top: 138vw;
+    width: 18vw;
+    height: 16vw; 
+
+}
+
+.imagem5{
+
+    margin-left:  0vw;
+    padding: 0;
+    opacity: 10;
+    position: absolute;
+    left: 66vw;
+    top: 118vw;
+    width: 18vw;
+    height: 16vw; 
+
+}
+
+.positividade3{
+    top: 35.6vw;
+    left: 63vw;
+    font-size: 15pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.positividade4{
+    top: 35.2vw;
+    left: 63vw;
+    font-size: 15pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.aspas1{
+    top: 52vw;
+    left: 15vw;
+    font-size: 20vw;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.positividade5{
+    top: 40vw;
+    left: 20vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.positividade6{
+    top: 40.1vw;
+    left: 20vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.positividade7{
+    top: 40.4vw;
+    left: 20vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.positividade8{
+    top: 40.7vw;
+    left: 20vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.positividade9{
+    top: 41vw;
+    left: 20vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.positividade10{
+    top: 41.3vw;
+    left: 20vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.aspas2{
+    top: 35vw;
+    left: 62vw;
+    font-size: 20vw;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.discografia{
+    top: 36vw;
+    left: 5vw;
+    font-size: 30pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.imagem6{
+
+    margin-left:  0vw;
+    padding: 0;
+    opacity: 10;
+    position: absolute;
+    left: 15vw;
+    top: 205vw;
+    width: 18vw;
+    height: 16vw; 
+
+}
+
+.positividade11{
+    top: 48.3vw;
+    left: 40vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+.positividade12{
+    top: 48.3vw;
+    left: 40vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.imagem7{
+
+    margin-left:  0vw;
+    padding: 0;
+    opacity: 10;
+    position: absolute;
+    left: 35vw;
+    top: 220vw;
+    width: 18vw;
+    height: 16vw; 
+
+}
+
+.positividade13{
+    top: 57Vw;
+    left: 60vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.positividade14{
+    top: 57Vw;
+    left: 60vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.positividade15{
+    top: 57Vw;
+    left: 60vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.imagem8{
+
+    margin-left:  0vw;
+    padding: 0;
+    opacity: 10;
+    position: absolute;
+    left: 50vw;
+    top: 237vw;
+    width: 18vw;
+    height: 16vw; 
+
+}
+
+.positividade16{
+    top: 62Vw;
+    left: 70vw;
+    font-size: 20pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.premiacoes1{
+    top: 80vw;
+    left: 5vw;
+    font-size: 30pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+
+}
+
+.imagem9{
+
+    margin-left:  0vw;
+    padding: 0;
+    opacity: 10;
+    position: absolute;
+    left: 44vw;
+    top: 270vw;
+    width: 50vw;
+    height: 40vw; 
+
+}
+
+.positividade17{
+    top: 82Vw;
+    left: 5vw;
+    font-size: 15pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
+
+.positividade18{
+    top: 85Vw;
+    left: -1.5vw;
+    font-size: 15pt;
+    position: relative;
+    color: #ffffff;
+    padding: auto;
+    text-align: left
+    
+
+}
