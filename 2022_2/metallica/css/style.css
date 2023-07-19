@@ -1,0 +1,238 @@
+/* geral */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    background-color: rgb(0, 0, 0);
+}
+
+div{
+    text-align: center;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Lovelo;
+    src: url('../fonts/Lovelo\ Black.otf');
+}
+
+@font-face{
+    font-family: Questrial;
+    src: url('../fonts/Questrial-Regular.ttf');
+}
+
+/* menu */
+nav{
+    background-color: rgb(0, 0, 0);
+    min-height: 20px;
+    margin: auto 10%;
+    border-style: solid;    
+    border-color: white;
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    text-align: center; 
+    align-items: center;   
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-family: Lovelo, sans-serif;
+  font-size: 16.2pt;
+  margin: 0;
+  padding: 0 20px;  
+}
+
+nav a:hover{
+ background-color: rgb(255, 255, 255);   
+ color: black;
+}
+
+/* main home */
+main h1{
+    font-family: Questrial;
+    color: white;
+    text-align: center;
+}
+
+hr{
+    position: relative;
+    width: 700px;
+    left: -8%;  
+}
+
+main h4{
+    font-family: Lovelo;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+}
+
+div.capa{
+    margin-top: 10%;
+}
+
+img.linha_imagem{
+    width: 350px;
+    min-width: 30px;
+
+}
+
+/* main história */
+.titulo h2{
+    color: white;
+    font-family: Lovelo;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 99px;
+    padding-bottom: 10px;
+    width: 700px;
+    font-size: 16pt;
+    padding-top: 20px;
+}
+.foto{
+    display: flex;
+    padding-left: 190px;
+    padding-right: 220px;
+}
+
+.foto img{
+    height: 300px;
+    
+}
+
+.foto p {
+    color: white;
+    font-family: Questrial;
+    margin-left: 30px;
+    width: 900px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: left;
+}
+
+.legenda_historia p{
+    color: white;
+    font-family: Questrial;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 99px;
+    padding-top: 10px;
+    width: 700px;
+    font-size: 10pt;
+    overflow-wrap: break-word;
+}
+
+/* main integrantes */
+.titulo h2{
+    color: white;
+    font-family: Lovelo;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 99px;
+    padding-bottom: 10px;
+    width: 700px;
+    font-size: 16pt;
+    padding-top: 20px;
+}
+.foto{
+    display: flex;
+    padding-left: 190px;
+    padding-right: 220px;
+}
+
+.foto img{
+    height: 200px;
+    
+}
+
+.foto p {
+    color: white;
+    font-family: Questrial;
+    margin-left: 30px;
+    width: 900px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    text-align: left;
+}
+
+.legenda_integrantes p{
+    color: white;
+    font-family: Questrial;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 445px;
+    padding-top: 10px;
+    width: 1000px;
+    font-size: 10pt;
+    overflow-wrap: break-word;
+}
+
+
+/* Footer */
+.footer {
+	background-color: #000;
+	width: 100%;
+	float: left;
+	font-size: 18px;
+}
+
+.footer .left { 
+	width:100%; 
+	float:left; 
+	border-bottom:1px #222424 solid;
+	border-right:0; 
+	margin-bottom:20px; 
+    padding-bottom:20px;
+}
+
+.footer .links {
+	width: 100%;
+	float: left;
+	color:  #ffffff;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.footer .links a {
+    display: block;
+    line-height: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-family: Lovelo, sans-serif;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.footer .links a:hover { 
+	color:#8f9296; 
+}
+
+.footer .Copyright {
+	font-family: Questrial, sans-serif;
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+.footer .right { 
+	width:100%; 
+	float:left; 
+}
+
+/*Responsive footer*/
+@media (min-width: 1280px) {
+	.footer               { padding: 100px 50px 50px 100px; }
+	.footer .Copyright    { font-size: 16px; }
+}
+
+@media (min-width: 768px) {	
+	.footer .left         { width:48%; border-bottom:0; }
+	.footer .right        { width:48%; padding-left: 4%; border-left: 1px #222424 solid; } 
+} 
