@@ -1,0 +1,658 @@
+<!DOCTYPE html> 
+<html>
+   
+      <head> 
+     
+        <link href="grid/simple-grid.min.css" rel="stylesheet">
+       
+<title>Agenda</title>
+
+<meta charset="utf-8">
+
+<link href="grid/simple-grid.min.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+
+            nav{
+                background-color: white;
+                align-items: center;
+                text-align: center; 
+                padding-left: 15%;               
+            }
+
+            .menu{
+                font-family: Bebas Neue;
+                background-color: white;                
+                color:black;
+                border-color: black;
+                border-style: solid;                
+                border-right-width: 10px;
+                border-left-width: 10px;
+                border-top-width: 0px;
+                border-bottom-width: 0px;
+                font-size: 30pt;
+                text-decoration: none;                
+                float:left;                                                
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .atual{
+                font-family: Bebas Neue;
+                font-size: 30pt;
+                font-weight: bold;
+                text-decoration: none; /*Tira o sublinhado*/
+                color:black; /*Cor da letra*/
+
+                background-color: rgb(94, 91, 91);                
+                float:left;                                                
+                border-color: black;
+                border-style: solid;                
+                border-right-width: 10px;
+                border-left-width: 10px;
+                border-top-width: 0px;
+                border-bottom-width: 0px;                
+                padding-left: 10px;
+                padding-right: 10px;
+
+            }
+
+            .navbar{
+                position: relative;
+                width: auto;
+                background: black;
+                opacity: 1;
+                height: 60px;
+                z-index: 12;
+            }
+
+            main{
+                clear: left;
+                padding-top: 50px;
+            }
+            h1{
+                font-family: Carter One;
+                color:black;
+                font-size: 70px;
+                margin: 0 auto;
+                text-align: center;
+                background-color: rgb(94, 91, 91);
+            }            
+
+            h2{
+                text-align: center;
+            }
+
+            h3{
+                font-family: Verdana;
+                color:black;
+            }
+
+            p{
+                font-family: Verdana;
+                color:black;
+            }
+
+            .tabela{
+                display: inline-flex;
+                text-align: center;
+                width:30%;
+                margin: 20px;
+            }
+
+            ul {list-style-type: none;}
+            body {font-family: Verdana, sans-serif;}
+
+            /*Configurar cor do da identificação do mês - Barra de destaque*/
+            .month {
+            padding: 70px 25px;
+            margin: 20px auto 0px auto ;
+            width: 90%;
+            background: #000000;
+            text-align: center;
+            }
+
+            .month ul {
+            margin: 0;
+            padding: 0;
+            }
+
+            .month ul li {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            }
+
+            .weekdays {
+                width: 92.6%;
+                margin: 0 auto;
+                padding: 10px 0;
+                background-color: #ddd;
+            }
+
+            .weekdays li {
+            display: inline-block;
+            width: 13.6%;
+            color: #666;
+            text-align: center;
+            }
+
+            .days {
+            padding: 10px 10px;            
+            width: 91.6%;
+            background: #eee;  
+            margin: 0 auto;
+            /*Condigura o tamanho da área de dias*/
+            height: 590px;
+            }
+
+            .days li {
+            list-style-type: none;
+            display: inline-block;
+            width: 13.6%;
+            height: 100px;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size:12px;
+            color: #777;
+            }
+
+
+            /*Configurar cor do dia de show AQUI*/
+            .days li .active {
+            padding: 5px 5px;
+            height: 100px;
+            line-height: 25px;
+            background: #6c6e6e;
+            color: white !important
+            }
+
+            /* Add media queries for smaller screens */
+            @media screen and (max-width:720px) {
+            .weekdays li, .days li {width: 13.1%;}
+            }
+
+            @media screen and (max-width: 420px) {
+            .weekdays li, .days li {width: 12.5%;}
+            .days li .active {padding: 2px;}
+            }
+
+            @media screen and (max-width: 290px) {
+            .weekdays li, .days li {width: 12.2%;}
+            }
+        </style>
+
+</head>
+
+<body>
+
+    <div class="row"> 
+
+    <img src="imagens/JUSTINAGENDA.jfif" alt="banner da serie" width="100%">
+
+
+    <h1>AGENDA</h1>
+
+    <nav class="navbar">
+        <a href="Sobre.html" class="menu">Sobre</a>
+        <a href="Trajetória.html" class="menu">Trajetória</a>
+        <a href="Relacoes.html" class="menu">Relações</a>
+        <a href="Discografia.html" class="menu">Discografia</a>
+        <a href="Agenda.html" class="atual">Agenda</a>
+        <a href="Noticias.html" class="menu">Notícias</a>
+        <a href="Pelo mundo.html" class="menu">Pelo mundo</a>
+        <a href="Momentos.html" class="menu">Momentos</a> 
+    </nav>
+
+
+    <main>
+        <h2>Calendário de shows 2023</h2>
+
+        <!--JANEIRO-->
+        <!--Identificação do mês-->
+        <div class="month">      
+            <ul>
+              <li>
+                Janeiro<br>
+                <span style="font-size:18px">2023</span>
+              </li>
+            </ul>
+        </div>          
+        <!--Barra dias da semana-->
+        <ul class="weekdays">
+            <li>Dom</li>
+            <li>Seg</li>
+            <li>Ter</li>
+            <li>Qua</li>
+            <li>Qui</li>
+            <li>Sex</li>
+            <li>Sáb</li>
+         </ul>
+         <!--Dias-->
+         <ul class="days">  
+            <!--Tirar O NÚMERO nos dias da semana que não aparecem no calendário. Ex: se o mês começa na quarta, excluir os números até quarta-->
+            <!--A contagem do calendário começa no domingo-->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>
+                <span class="active">
+                    11 <br>
+                    Holanda - Amsterdã
+                </span>
+            </li>
+            <li>12</li>
+            <li>
+                <span class="active">
+                    13 <br>
+                    Holanda - Amsterdã
+                </span>
+            </li>
+            <li>
+                <span class="active">
+                    14 <br>
+                    Holanda - Amsterdã
+                </span>
+            </li>
+            <li>15</li>
+            <li>
+                <span class="active">
+                    16 <br>
+                    Alemanha - Hamburgo
+                </span>
+            </li>
+            <li>17</li>
+            <li>
+                <span class="active">
+                    18 <br>
+                    Suíça - Zurique
+                </span>
+
+            </li>
+            <li>19</li>
+            <li>20</li>
+            <li>
+                <span class="active">
+                    21 <br>
+                    Portugal - Lisboa
+                </span>
+
+            </li>
+            <li>22</li>
+            <li>
+                <span class="active">
+                23 <br>
+                Espanha	- Madri
+                </span>
+            </li>
+            <li>24</li>
+            <li>
+                <span class="active">
+                    25 <br>
+                    Espanha - Barcelona
+                </span>
+            </li>
+            <li>26</li>
+            <li>
+                <span class="active">
+                    27 <br>
+                    itália - Casalecchio Di Reno
+                </span>
+            </li>
+            <li>
+                <span class="active">
+                    28 <br>
+                    itália - Casalecchio Di Reno
+                </span>
+            </li>
+            <li>29</li>
+            <li>30</li>
+            <li>
+                <span class="active">
+                    31 <br>
+                    	Alemanha - Colônia
+                </span>
+            </li>
+        </ul>
+
+
+        <div class="month">      
+            <ul>
+              <li>
+                Fevereiro<br>
+                <span style="font-size:18px">2023</span>
+              </li>
+            </ul>
+        </div>          
+        <!--Barra dias da semana-->
+        <ul class="weekdays">
+            <li>Dom</li>
+            <li>Seg</li>
+            <li>Ter</li>
+            <li>Qua</li>
+            <li>Qui</li>
+            <li>Sex</li>
+            <li>Sáb</li>
+          </ul>
+          <!--Dias-->
+          <ul class="days">  
+            <!--Tirar O NÚMERO nos dias da semana que não aparecem no calendário. Ex: se o mês começa na quarta, excluir os números até quarta-->
+            <!--A contagem do calendário começa no domingo-->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>
+                <span class="active">
+                    11 <br>
+                    Holanda - Amsterdã
+                </span>
+            </li>
+            <li>12</li>
+            <li>
+                <span class="active">
+                    13 <br>
+                    Holanda - Amsterdã
+                </span>
+            </li>
+            <li>
+                <span class="active">
+                    14 <br>
+                    Holanda - Amsterdã
+                </span>
+
+            </li>
+            <li>15</li>
+            <li>
+
+                <span class="active">
+                    16 <br>
+                    Alemanha - Hamburgo
+                </span>
+
+            </li>
+            <li>17</li>
+            <li>
+
+                <span class="active">
+                    18 <br>
+                    Suíça - Zurique
+                </span>
+
+            </li>
+            <li>19</li>
+            <li>20</li>
+            <li>
+
+                <span class="active">
+                    21 <br>
+                    Portugal - Lisboa
+                </span>
+
+            </li>
+            <li>22</li>
+            <li>
+                <span class="active">
+                23 <br>
+                Espanha	- Madri
+            </span>
+
+
+
+
+            </li>
+
+            <li>24</li>
+            <li>
+
+                <span class="active">
+                    25 <br>
+                    Espanha - Barcelona
+                </span>
+
+
+            </li>
+            <li>26</li>
+            <li>
+
+                <span class="active">
+                    27 <br>
+                    itália - Casalecchio Di Reno
+                </span>
+
+
+            </li>
+            <li>
+
+
+                <span class="active">
+                    28 <br>
+                    itália - Casalecchio Di Reno
+                </span>
+
+
+            </li>
+            <li>29</li>
+            <li>30</li>
+            <li>
+
+                <span class="active">
+                    31 <br>
+                    	Alemanha - Colônia
+                </span>
+            </li>
+          </ul>
+       
+
+
+          <div class="month">      
+            <ul>
+              <li>
+                Março<br>
+                <span style="font-size:18px">2023</span>
+              </li>
+            </ul>
+        </div>
+          
+         
+          <ul class="weekdays">
+            <li>Dom</li>
+            <li>Seg</li>
+            <li>Ter</li>
+            <li>Qua</li>
+            <li>Qui</li>
+            <li>Sex</li>
+            <li>Sáb</li>
+          </ul>
+        
+          <ul class="days">  
+            <!--Tirar O NÚMERO nos dias da semana que não aparecem no calendário. Ex: se o mês começa na quarta, excluir os números até quarta-->
+            <!--A contagem do calendário começa no domingo-->
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li></li>
+            <li>
+                1
+            </li>
+            <li>
+                2
+            </li>
+            <li>
+                3
+            </li>
+            <li>
+                2
+            </li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>
+                8
+            </li>
+            <li>9</li>
+            <li>
+                10
+            </li>
+            <li>                
+                <span class="active">
+                    11 <br>
+                    Irlanda	Dublin
+                </span>
+            </li>
+            <li>12</li>
+            <li>
+                <span class="active">
+                    13<br>
+                    Reino Unido	Manchester
+                </span>
+            </li>
+            <li>
+                <span class="active">
+                    14<br>
+                    França	Paris
+                </span>
+            </li>
+            <li>
+                15
+            </li>
+            <li>
+                <span class="active">
+                    16 <br>
+                    França	Paris
+                </span>
+            </li>
+            <li>
+               17
+            </li>
+            <li>
+                <span class="active">
+                    18 <br>
+                    Alemanha	Munique
+                </span>
+            </li>
+            <li>19</li>
+            <li>20
+            </li>
+            <li>
+                <span class="active">
+                    21 <br>
+                    Hungria	Budapeste
+                </span>
+            </li>
+            <li>
+                22
+            </li>
+            <li>
+                <span class="active">
+                    23 <br>
+                    República Tcheca	Praga
+                </span>
+            </li>
+            <li>
+                24
+            </li>
+            <li>
+                <span class="active">
+                    25 <br>
+                    Suécia	Johannesho
+                </span>
+            </li>
+            <li> 26
+        </li>
+            <li>
+                    27
+            </li>
+            <li>               
+                    28
+            </li>          
+          </ul>
+
+          <br>
+          <br>
+
+<center>
+            <div class="col-6">
+
+
+                            <figure><img src="imagens/JUSTIN TORONTO.webp" alt="banner da serie" width="40%">
+                            <figcaption><P>Local: Toronto</P></figcaption>
+                            </figure>
+
+                            <br>
+
+                            <figure><img src="imagens/justin san diego.jpg" alt="banner da serie" width="40%">
+
+                                <figcaption> <p>Local:San Diego 18/02</p></figcaption></figure>
+
+                                <br>
+
+                                <figure> <img src="imagens/justin brasil.jpeg" alt="banner da serie" width="40%">  
+                            
+                                    <figcaption>   <p>Local:Rock in rio</p></figcaption></figure>
+
+                                    <br>
+
+                                    <figure> <img src="imagens/Justin atlanta.jpg" alt="banner da serie" width="40%">  
+
+                                        <figcaption> <p>Local: Atlanta georgia</p></figcaption></figure>
+
+                        </div>
+
+
+                        <div class="col-6">
+                            <figure> <img src="imagens/justin manchester.jpg" alt="banner da serie" width="40%">  
+                                <figcaption> <p>Local: Manchester</p></figcaption></figure>
+
+                                <br>
+
+                            <figure> <img src="imagens/jub nova.webp" alt="banner da serie" width="40%">  
+
+                                <figcaption><P>Local: Nova York</P></figcaption></figure>
+
+                                <br>
+
+                            <figure> <img src="imagens/justin los angel.jpg" alt="banner da serie" width="40%">  
+
+                                <figcaption><p>Local: Los Angeles</p></figcaption></figure>
+
+                                <br>
+
+                            <figure><img src="imagens/justin mexico.jpg" alt="banner da serie" width="40%"> 
+                            
+                                <figcaption> <p>Local: Mexico</p></figcaption></figure>
+
+                                <br>
+
+                            <figure>   <img src="imagens/justin londres.webp" alt="banner da serie" width="40%"> 
+
+                                <figcaption>  <p>Local: Londres</p></figcaption></figure>
+
+
+            </center></div>
+
+    </main>
+
+</body>
+
+</html>
