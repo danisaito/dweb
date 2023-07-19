@@ -1,0 +1,41 @@
+body{
+    background-image: url('file:///C:/Users/Toshiba/Downloads/-%20Projeto%20Interdisciplinar%20-%20DII%20e%20DW/Imagens/bg%20texturee.png');
+    background-size: 55%;
+}
+
+.estiloII {
+    text-align: left;
+    margin: 25px;
+    padding-left: -2px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+}
+
+.estiloII a:link{
+    color:white;
+    text-decoration: none;
+    font-weight: normal;
+}
+.estiloII a:visited{
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+.estiloII a:active{
+    color: white;
+    text-decoration: none;
+}
+
+.estiloII a:hover{
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.tv{
+    text-align: center;
+    margin-top: -25px;
+}

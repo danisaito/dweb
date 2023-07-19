@@ -1,0 +1,581 @@
+body {
+    background-color: #F35E7E;
+}
+
+.estiloI {
+    text-align: right;
+    margin: 25px;
+    padding-right: 15px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 28px;
+}
+
+.estiloI a:link{
+    color:white;
+    text-decoration: none;
+    font-weight: normal;
+}
+.estiloI a:visited{
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+.estiloI a:active{
+    color: white;
+    text-decoration: none;
+}
+
+.estiloI a:hover{
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.logo {
+    padding-left: 45px;
+    text-align: left;
+    margin: -25pt;
+}
+
+.macaco {
+    text-align: center;
+    padding-top: 450px;
+}
+
+.contas{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-family: 50px;
+    margin: -5px;
+    font-size: 20px;
+    padding-bottom: 200px;
+}
+
+@font-face {
+    font-family: 'JAF Herb Condensed'; 
+    src: url('../css/JAF\ Herb\ Condensed.ttf');
+}
+
+.album{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 100px;
+}   
+
+h1{
+    padding-left: -45px;
+    text-align: left; 
+    font-family: JAF Herb Condensed;
+    color: #60003D;
+    font-size: 125.5px;
+    margin-bottom: 18px;   
+}
+
+h2{
+    text-align: left;
+    padding-left: -45px;
+    font-family:'Bebas Neue', cursive;
+    color: white;
+    font-size: 40px;
+    margin-top: -35px;
+    margin-bottom: 28px;
+}
+
+.anuncio2{
+    text-align: left;
+    padding-left: -45px;
+    font-family: JAF Herb Condensed;
+    color: #60003D;
+    font-size: 35px;
+}
+
+p.botaoI{
+    text-align: center;  
+    padding-right: 170px;
+    float: right;
+}
+
+a.botaoI{
+    text-align: center;
+    text-decoration: none;    
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 auto 0 auto;
+    background-color: #60003D;
+}
+
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+   }
+
+.containerII {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 26.5px;
+}
+
+.G{
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 100px;
+    margin-left: 235px;
+}
+
+.bio{
+    text-align: left;
+    padding-left: 15px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 55px;
+    margin-top: -40px;
+}
+
+.intro{
+    text-align: left;
+    margin-left: 10px; 
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -15px;
+    background-color: #60003D;
+    padding: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 150px;
+}
+
+p.botao2{
+    text-align: center;  
+    padding-left: 95px;
+    float: right;
+    margin-right: 150px;
+}
+
+a.botao2{
+    text-align: center;
+    text-decoration: none;    
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 auto 0 auto;
+    background-color: #60003D;
+}
+
+.botaoI a:link{
+    color:white;
+    text-decoration: none;
+    font-weight: normal;
+}
+.botaoI a:visited{
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+.botaoI a:active{
+    color: white;
+    text-decoration: none;
+}
+
+.botaoI a:hover{
+    color:#000000;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.botao2 a:link{
+    color:white;
+    text-decoration: none;
+    font-weight: normal;
+}
+.botao2 a:visited{
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+.botao2 a:active{
+    color: white;
+    text-decoration: none;
+}
+
+.botao2 a:hover{
+    color: #000000;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.contas a:link{
+    color:white;
+    text-decoration: none;
+    font-weight: normal;
+}
+.contas a:visited{
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+.contas a:active{
+    color: white;
+    text-decoration: none;
+}
+
+.contas a:hover{
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+
+.estiloII {
+    text-align: left;
+    margin: 25px;
+    padding-left: -2px;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 25px;
+    padding-top: 10px;
+}
+
+.estiloII a:link{
+    color:white;
+    text-decoration: none;
+    font-weight: normal;
+}
+.estiloII a:visited{
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+.estiloII a:active{
+    color: white;
+    text-decoration: none;
+}
+
+.estiloII a:hover{
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.mpng{
+    text-align: center;
+    margin-right: 130px;
+    margin-top: -235px;
+    margin-bottom: -428px; 
+}
+
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 50%;
+    }
+    98% {
+      left: 50%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+  
+ 
+  
+  * {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  * {
+    -ms-overflow-style: none;
+  }
+  
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel {
+    position: relative;
+    padding-top: 100%;
+    perspective: 200px;
+  }
+  
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+   
+    counter-increment: item;
+  }
+  
+  .carousel__slide:nth-child(even) {
+    background-color:#F35E7E;
+  }
+  
+  .carousel__slide:before {
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    
+  }
+  
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+  }
+  
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation-name: tonext, snap;
+      animation-timing-function: ease;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+  
+    .carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart, snap;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+      animation-name: none;
+    }
+  }
+  
+  .carousel:hover .carousel__snapper,
+  .carousel:focus-within .carousel__snapper {
+    animation-name: none;
+  }
+  
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block;
+  }
+  
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color:#60003D;
+    background-clip: content-box;
+   
+    font-size: 0;
+    transition: transform 0.1s;
+  }
+  
+  .carousel::before,
+  .carousel::after,
+  .carousel__prev,
+  .carousel__next {
+    position: absolute;
+    top: 0;
+    margin-top: 37.5%;
+    width: 90px;
+    height: 50px;
+    font-size: 0;
+    outline: 0;
+    padding: 15px;
+    padding-bottom: 5px;
+  }
+  
+  .carousel::before,
+  .carousel__prev {
+    left: -1.5rem;
+  }
+  
+  .carousel::after,
+  .carousel__next {
+    right: -1.5rem;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+    content: '';
+    z-index: 1;
+    background-color:#60003D;
+    background-size: 75px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .carousel::before {
+    background-image: url("file:///C:/Users/Toshiba/Downloads/-%20Projeto%20Interdisciplinar%20-%20DII%20e%20DW/Imagens/seta%20esquerda.png");
+    width: 50px;
+    }
+  
+  .carousel::after {
+    background-image: url("file:///C:/Users/Toshiba/Downloads/-%20Projeto%20Interdisciplinar%20-%20DII%20e%20DW/Imagens/setaa.png");
+    width: 50px;
+    }
+
+    .corpo2 {
+        max-width: 570px;
+        margin: 0 auto;
+        margin-top: 125px;
+        margin-bottom: -250px;
+        
+      }
+
+.dpng{
+    text-align: right;
+    margin-left: 900px;
+    margin-top: -620px;
+  
+}
+
+.russpng{
+    text-align: left;
+    margin-right: -900px;
+    margin-top: -385px;
+
+}
+
+.containerIII{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.hist, .hist, .hist, .hist{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: left;
+    margin-right: 130px; 
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2px;
+    padding-right: 410px;
+    margin-left: 20px;
+ 
+}
+.characters{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: left;
+    margin-right: 130px; 
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2px;
+    padding-right: 410px;
+    margin-left: 20px;
+}
+
+.containerIV{
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    
+    margin-top: 65px;
+}
+
+.grupo{
+    margin-top: -700px;
+    text-align: right;
+    width: 90%;
+    height:90%;
+    padding-right: 10px;
+}
+
+
