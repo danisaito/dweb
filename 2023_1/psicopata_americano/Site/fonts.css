@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Cormorant";
+    src: url(fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Cormorant-Bold";
+    src: url(fonts/Cormorant_Garamond/CormorantGaramond-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Cormorant-Light";
+    src: url(fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf);
+}
+
+@font-face {
+    font-family: "Cormorant-Medium";
+    src: url(fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Cormorant-Semibold";
+    src: url(fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf);
+}

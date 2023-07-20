@@ -1,0 +1,33 @@
+#cover  {
+    height: 100vh;
+    width: auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-image: url(images/wp9675659-patrick-bateman-wallpapers.jpg), url(images/wp9675662-patrick-bateman-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: screen;
+    filter: contrast(0.9) brightness(0.6);
+}
+
+#title  {
+    font-size: clamp(2rem, -5rem + 13.3333vw, 5rem);
+}
+
+#subtitle  {
+    font-size: clamp(1rem, -5rem + 8.8889vw, 3rem);
+}
+
+#bottomtext {
+    font-size: clamp(15px, 2vw, 1.5rem);
+    min-width: 70vw;
+    text-align: center;
+}
