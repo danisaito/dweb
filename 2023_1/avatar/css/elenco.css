@@ -1,0 +1,297 @@
+body{
+    background-color: #448D4B;
+    font-family:'Cambria', 'Times New Roman';
+    font-size: 20px;
+    background-image: url(../imagens/WhatsApp\ Image\ 2023-06-21\ at\ 10.32.28.jpeg);
+  }
+  #Avatar{
+    width: 600px;
+    position: absolute;
+  display: flex;
+  margin-left: 30%;
+  margin-right: 50%;
+  margin-top: -30%;
+  }
+  .conteiner#myVideo  {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+     min-height: 100%;
+     display: flex;
+    }
+    
+    /*+++++++++++++++++++++Sinopse e Texto++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++logo+++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++Sinopse e Texto++++++++++++++++++++++++++++*/
+#logo1{
+  max-width: 50px;
+  margin-left: 85%;
+  margin-top: -3.5%;
+  position: absolute;
+}
+li {
+  float: left;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li a#logo {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+
+}
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #448D4B;
+        display: flex;
+        Justify-content: center
+      }
+    
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+      }
+      /*+++++++++++++++++++++Sinopse e Texto++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++logo+++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++Sinopse e Texto++++++++++++++++++++++++++++*/
+#logo1{
+  max-width: 50px;
+  margin-left: 85%;
+  margin-top: -3.5%;
+  position: absolute;
+}
+li {
+  float: left;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li a#logo {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+
+}
+.sinopse2 {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 2rem 3rem;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+          
+.sinopse2text {
+width: 75%;
+margin-left: 1px;
+  }
+          
+.sinopse2text p {
+font-size: 18px;
+ color: #ffffff;
+ }
+          
+.sinopse2img {
+width: 40%;
+  }
+          
+ .sinopse2img img {
+ width: 70%;
+ border: 0px solid #ffffff;
+ }
+ a:hover:not(.active) {
+  background-color: #ffffff;
+  color: #448D4B;
+}
+      .active {
+        background-color:#0062d3;
+      }
+      h1{
+        color: #ffffff;
+      }
+      h2{
+        color: #ffffff;
+      }
+      h3{
+        color: #ffffff;
+      }
+      p {
+        text-align: left;
+        color: #ffffff;
+      }
+      @media( max-width:1366px){
+        #Avatar{
+          width: 600px;
+          position: absolute;
+        display: flex;
+        margin-left: 30%;
+        margin-right: 50%;
+        margin-top: -50%;
+        }
+        .conteiner#myVideo  {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 1000%;
+           min-height: 100%;
+           display: flex;
+          }
+      }
+      @media( max-width:1366px){
+        #Avatar{
+          width: 600px;
+          position: absolute;
+        display: flex;
+        margin-left: 30%;
+        margin-right: 50%;
+        margin-top: -50%;
+        }
+        .conteiner#myVideo  {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 1000%;
+           min-height: 100%;
+           display: flex;
+          }
+      }
+      @media (min-width:1920) {
+        body{
+          background-color: #448D4B;
+          font-family:'Cambria', 'Times New Roman';
+          font-size: 20px;
+          background-image: url(../imagens/WhatsApp\ Image\ 2023-06-21\ at\ 10.32.28.jpeg);
+        }
+        #Avatar{
+          width: 600px;
+          position: absolute;
+        display: flex;
+        margin-left: 30%;
+        margin-right: 50%;
+        margin-top: -30%;
+        }
+        .conteiner#myVideo  {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 1000%;
+           min-height: 100%;
+           display: flex;
+          }
+        
+          ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #448D4B;
+              display: flex;
+              Justify-content: center
+            }
+          
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            a:hover:not(.active) {
+              background-color: #ffffff;
+              color: #448D4B;
+            }
+            
+            .active {
+              background-color:#0062d3;
+            }
+        /*+++++++++++++++++++++Sinopse e Texto++++++++++++++++++++++++++++*/
+        /*+++++++++++++++++++++++++++logo+++++++++++++++++++++++++++++++++*/
+        /*+++++++++++++++++++++Sinopse e Texto++++++++++++++++++++++++++++*/
+        #logo1{
+          max-width: 50px;
+          margin-left: 85%;
+          margin-top: -3.5%;
+          position: absolute;
+        }
+        li {
+          float: left;
+          text-decoration: none;
+          list-style-type: none;
+        }
+        
+        li a#logo {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+        
+        }
+        
+        
+            /*+++++++++++++++++++++Sinopse e Texto++++++++++++++++++++++++++++*/
+        
+        .sinopse2 {
+          display: flex;
+          flex-direction: row-reverse;
+          padding: 0 2rem 3rem;
+          width: 80%;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .sinopse2text {
+          width: 60%;
+          margin-left: 120px;
+        }
+        
+        .sinopse2text p {
+          font-size: 18px;
+          color: #ffffff;
+        }
+        
+        .sinopse2img {
+          width: 40%;
+        }
+        
+        .sinopse2img img {
+          width: 115%;
+          border: 0px solid #ffffff;
+        }
+        
+        
+            h2 {
+              text-align: left;
+              color: #ffffff;
+            }
+            h1{
+              color: #ffffff;
+            
+            }
+            h2{
+              color: #ffffff;
+            }
+            h3{
+              color: #ffffff;
+            }
+      }
