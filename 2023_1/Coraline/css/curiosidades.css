@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: black;
+}
+ul {
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.397);
+        margin-top: 50px;
+        margin-right:50px ;
+        margin-left: 50px;
+  }  
+  
+  li{
+float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: rgba(17, 17, 17, 0.719)  ;
+
+  }
+  h2{
+    margin-top: 15px;
+  }
+  p{
+    text-align: justify;
+    padding: 30px;
+  width: 500px;
+ 
+  font-size: 35px;
+  }
+  .slick-track{
+    background-image:('../img/Coraline.png') ;
+  }
+  /*######################################*/
+  /*          Catossel Elenco             */
+  /*######################################*/
+  .elenco .slides {
+    transform: scale(0.6);
+ transition: 0.3s;
+max-width: 500px;
+}
+.elenco .slides.slick-center{
+    transform: scale(1);
+transition: 3,0s;
+}
+
+  .containner{
+    /*grid-container*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  section{
+    max-height: 470px;
+  }
+  
+   iframe{
+    width:700px;;
+    height: 455px;
+  }
+
+  .video{
+    /*grid-item*/    
+    text-align: center;    
+  }
+
+  p{
+    color: #fff;
+    font-size: 25px;
+    
+  }
+
+  h2{
+    color: white;
+    font-size: 45px;
+    font-family: 'MedievalSharp', cursive; 
+  }
+  h3{
+    color: white;
+    font-size: 45px;
+    font-family: 'MedievalSharp', cursive; 
+    margin-top: 150px;
+  }
+  .barra{
+    background-color: blueviolet;
+  }
+  .container {
+    width: 100%;
+    min-height: 100vh;
+    display: inline-block;
+  flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 360px;
+    display:flex ;
+    grid-column:  300px  300px 300px 300px ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(#333, #333);
+    transition: all .5s;
+    padding: 15px;
+}
+
+.card:hover {
+    background-image: linear-gradient(#672abf, #380e74);
+}
+
+.card .img {
+    width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-image: url('../img/5.png');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
+}
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
