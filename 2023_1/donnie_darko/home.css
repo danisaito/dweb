@@ -1,0 +1,87 @@
+
+
+.title {
+    font-family: 'Cormorant SC', serif;
+    font-size: 50px;
+    font-weight: regular;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+div {
+    font-family: 'Cormorant SC', serif;
+    font-size: 50px;
+    font-weight: regular;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 0.5%;
+}
+
+css #timer {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.background{
+    background-image: url(./img/Background-frank.png);
+    min-height: 100vh;
+    height: 100%;
+    width: 100%; 
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+    
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+#message {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+    animation: blink 1s infinite;
+}
+
+#timer {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+button {
+    padding: 20px 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    cursor: pointer;
+    font-family: 'Cormorant SC', serif;
+    font-size: 32px;
+    font-weight: regular;
+    list-style: none;
+    text-decoration: none;
+}
