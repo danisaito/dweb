@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>O diabo veste Prada</title>
+  <meta charset="UTF-8">
+  <!-- Define Fontes e Favicon -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:wght@100;300;500;700&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="Images/Favicon.png">
+  
+    <!-- Não mexer em style, isso está um caos -->
+  <style>
+ body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      background-color: #ffffff;
+      color: #000000;
+      margin: 0;
+ }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #bf0a0a;
+      padding: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+      margin-left: 20px;
+    }
+
+    .menu-items {
+      display: flex;
+    }
+
+    .menu-item {
+      margin-right: 10px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .menu-item:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-top: 70px;
+      padding: 20px;
+    }
+
+    .black-banner {
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+
+    .white-block {
+      width: 350px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #fdfdfd;
+      color: rgb(0, 0, 0);
+      padding: 20px;
+    }
+
+    .white-b-block {
+      width: 350px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #0000002a;
+      color: rgb(0, 0, 0);
+      padding: 20px;
+    }
+
+    .red-block {
+      background-color: #bf0a0a;
+      color: white;
+      padding: 20px;
+    }
+
+    .title {
+      font-family: 'Roboto Slab', sans-serif;
+      font-weight: 300;
+      font-size: 36px;
+      margin: 0px 0 5px 20px;
+    }
+
+    .subtitle {
+      font-family: 'Homemade Apple', cursive;
+      font-size: 24px;
+      margin-top: -35px;
+      padding-left: 40px;
+    }
+
+    .subtitle2 {
+      font-family: 'Homemade Apple', cursive;
+      font-size: 30px;
+      margin-top: 0px;
+      padding-left: 20px;
+      font-weight: regular;
+    }
+
+    .text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .frase {
+      font-family: 'Roboto Slab', sans-serif;
+      color: white;
+      font-size: 24px;
+      margin: 0;
+      padding: 10px;
+      background-color: black;
+      text-align: center;
+    }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .image-gallery img {
+      width: 150px;
+      height: 150px;
+      margin: 0 5px;
+    }
+    
+    .flex-container {
+    display: flex;
+    align-items: center;
+  }
+
+    #obra {
+    display: flex;
+  }
+
+  .film-block,.book-block {
+  width: 50%;
+  font-size: 16px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  transition: width 0.3s;
+  overflow: hidden;
+  cursor: pointer;}
+  
+  .film-block.open,
+  .book-block.open {
+  width: 100%;}
+  
+  .block-content {
+  padding: 20px;
+  text-align: center;}
+  
+  .block-content h2,
+  .block-content .texto {
+  margin: 0;}
+  
+  .elenco-images img {
+  max-width: 80px;
+  max-height: 80px;
+  margin-left: 20px;}
+  
+  .elenco-images img {
+    margin-right: 5px;
+ }
+
+ .red-background {
+    background-color: #bf0a0a;
+    color: white;
+    height: 300px;
+    }
+
+    .hidden {
+    display: none;
+  }
+
+  .carousel {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .carousel-content {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-slide {
+      flex: 0 0 100%;
+    }
+    
+    .carousel-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-gallery2{
+    }
+
+    .footer {
+      background-color: #000000;
+      color: white;
+      padding: 20px;
+    }
+    
+    .footer p {
+      margin: 0;
+    }
+    
+    .footer-link {
+      color: white;
+      text-decoration: underline;
+    }
+</style>
+</head>
+
+<body>
+    <!-- Menu superior flutuante -->
+  <div class="menu">
+    <img class="logo" src="Images/logo-branca.png" alt="Logo">
+    <div class="menu-items">
+      <a class="menu-item" href="#obra">OBRA</a>
+      <a class="menu-item" href="#elenco">ELENCO</a>
+      <a class="menu-item" href="#mais">MAIS</a>
+      <a class="menu-item" href="#moda">MODA</a>
+      <a class="menu-item" href="#sobre">SOBRE</a>
+    </div>
+  </div>
+
+  <!-- Conteúdo das sessões -->
+<section>
+<div class="carousel">
+  <div class="carousel-content">
+    <div class="carousel-slide">
+      <img class="carousel-image" src="Images/carrossel 1.png" alt="Imagem 1">
+    </div>
+    <div class="carousel-slide">
+      <img class="carousel-image" src="Images/carrossel 2.png" alt="Imagem 2">
+    </div>
+    <div class="carousel-slide">
+      <img class="carousel-image" src="Images/carrossel 3.png" alt="Imagem 3">
+    </div>
+  </div>
+</div>
+</section>
+
+  <!-- Sessão obra com script de ocultar -->
+  <section id="obra">
+    <div class="film-block" onclick="funcaoObras('filme')">
+      <div class="block-content">
+        <h2 class="title">Filme</h2>
+        <p class="texto">"O Diabo Veste Prada" é uma comédia-dramática que acompanha a vida de Andy Sachs, uma jovem jornalista recém-formada que consegue um emprego como assistente da temida editora de moda Miranda Priestly. Enquanto Andy se esforça para se adaptar ao mundo da moda e lidar com as demandas implacáveis de Miranda, ela passa por uma transformação pessoal e profissional. O filme retrata as pressões da indústria da moda, as relações complexas entre colegas de trabalho e a importância de equilibrar ambição e autenticidade. Com performances brilhantes de Meryl Streep e Anne Hathaway, "O Diabo Veste Prada" é uma obra divertida e reflexiva que oferece uma visão satírica e cativante do mundo da moda.</p>
+      </div>
+    </div>
+  
+    <div class="book-block red-background" onclick="funcaoObras('livro')">
+      <div class="block-content">
+        <h2 class="title">Livro</h2>
+        <p class="texto white-text">Lauren Weisberger é uma renomada escritora conhecida por seu best-seller mundial "O Diabo Veste Prada". O livro ganhou grande popularidade ao retratar a indústria da moda de forma satírica e cativante, através da história de Andy Sachs, uma jovem que se torna assistente da temida editora de moda Miranda Priestly. Além do sucesso inicial, a obra teve uma continuação intitulada "O Diabo Veste Prada Retorna", que retoma a história de Andy após alguns anos, proporcionando aos leitores novas reviravoltas e a oportunidade de mergulhar novamente no intrigante mundo da moda. Lauren Weisberger conquistou o público com sua escrita envolvente e perspicaz, estabelecendo-se como uma autora talentosa e estimulando o interesse por suas obras tanto entre os amantes da moda quanto entre os leitores em geral.</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- Sessão Elenco Funciono VIVA -->
+  <section id="elenco">
+    <div class="black-banner" style="margin: -200;">
+      <p class="frase">"Eu aposto que milhões de meninas se matariam por esse emprego."</p>
+    </div>
+
+    <h2 class="title">ELENCO</h2>
+    <div class="elenco-container">
+      <div class="elenco-images">
+        <img src="Images/ator1.png" alt="Ator 1" onclick="mostrarInfo(1)">
+        <img src="Images/ator2.png" alt="Ator 2" onclick="mostrarInfo(2)">
+        <img src="Images/ator3.png" alt="Ator 3" onclick="mostrarInfo(3)">
+        <img src="Images/ator4.png" alt="Ator 4" onclick="mostrarInfo(4)">
+        <img src="Images/ator5.png" alt="Ator 5" onclick="mostrarInfo(5)">
+      </div>
+      <div class="elenco-info">
+
+        <div class="elenco-item" id="info1" style="display: block;">   <!-- block para aparecer por primeiro, copia cola demais infos para outros atores -->
+          <div class="red-block">
+            <h class="subtitle2">Miranda Priestly</h>
+            <div class="flex-container">
+              <p style="max-width: 50%; font-size: 16px; font-weight: Thin; line-height: 1.5;">
+                Temida editora-chefe da revista de moda Runway, conhecida por sua personalidade dominante, exigente e implacável. Miranda é retratada como uma figura poderosa e intimidante, cujas decisões ditam o rumo da indústria da moda. Seu senso de estilo impecável e sua capacidade de identificar tendências são inigualáveis. Apesar de sua atitude desafiadora, ao longo do livro e do filme, o público também é convidado a entender a pressão e os desafios que ela enfrenta em sua posição de poder. Miranda Priestly se tornou um ícone da moda e uma personagem memorável, trazendo uma dose de realismo e fascínio ao mundo da indústria fashion.
+              </p>
+              <img src="Images/ator1v.png" alt="Imagem de Miranda Priestly" style="width: 251px; height: 333px; margin-left: 200px;">
+            </div>
+          </div>
+          <div class="gray-block">
+            <div class="flex-container">
+            <img src="Images/ator1l.png" alt="Imagem de Meryl Streep" style="width: 251px; height: 333px; margin: 50px;">
+            <h class="subtitle2" style="margin-botton: 10px;">Meryl Streep</h>
+            <p style="max-width: 50%; font-size: 16px; font-weight: Thin; line-height: 1.5; margin-top: 200px; margin-left: -200px;">
+              Mary Louise Streep, mais conhecida como Meryl Streep, é uma famosa atriz norte-americana. Descrita pela mídia como a "melhor atriz de todos os tempos", é ganhadora de todos os maiores prêmios do cinema. Streep é conhecida principalmente por sua versatilidade em seus papéis e sua adaptação em sotaques.
+              </p>
+            </div>
+          </div>          
+        </div>
+
+        <div class="elenco-item" id="info2" style="display: none;">
+          <div class="red-block">
+            <h class="subtitle2">Andy Sachs</h>
+            <div class="flex-container">
+              <p style="max-width: 50%; font-size: 16px; font-weight: Thin; line-height: 1.5;">
+                Jovem jornalista recém-formada que consegue um emprego como assistente da poderosa editora de moda Miranda Priestly. Inicialmente ingênua e deslocada no mundo da moda, Andy enfrenta desafios e pressões enquanto tenta se adaptar ao exigente ambiente de trabalho. Ao longo da história, ela passa por uma transformação pessoal e profissional, aprendendo a equilibrar suas ambições com seus valores e a encontrar sua própria identidade no universo fashion. Andy é uma personagem complexa e cativante, cuja jornada ressoa com muitos leitores ao explorar temas como ambição, autenticidade e a busca pelo equilíbrio entre trabalho e vida pessoal.
+              </p>
+              <img src="Images/ator2v.png" alt="Imagem de Andy Sachs" style="width: 251px; height: 333px; margin-left: 200px;">
+            </div>
+          </div>
+          <div class="gray-block">
+            <div class="flex-container">
+            <img src="Images/ator2l.png" alt="Imagem de Anne Hathaway" style="width: 251px; height: 333px; margin: 50px;">
+            <h class="subtitle2" style="margin-botton: 10px;">Anne Hathaway</h>
+            <p style="max-width: 50%; font-size: 16px; font-weight: Thin; line-height: 1.5; margin-top: 200px; margin-left: -200px;">
+              Ela ganhou destaque em filmes como "O Diabo Veste Prada" e "Os Miseráveis" e recebeu reconhecimento da crítica e prêmios por suas performances. Além de seu talento como atriz, Hathaway é admirada por seu charme, elegância e senso de estilo, o que a torna uma figura inspiradora tanto no cinema quanto no mundo da moda. Com seu carisma e talento, Anne Hathaway continua a encantar o público e a deixar sua marca na indústria do entretenimento.
+              </p>
+            </div>
+          </div>          
+        </div>
+
+        <div class="elenco-item" id="info3" style="display: none;">
+          <div class="red-block">
+            <h class="subtitle2">Nagel</h>
+            <div class="flex-container">
+              <p style="max-width: 50%; font-size: 16px; font-weight: Thin; line-height: 1.5;">
+                Ele é o diretor de moda da revista Runway e desempenha um papel crucial na transformação da personagem principal, Andy Sachs. Nigel é retratado como um indivíduo talentoso e experiente no mundo da moda, sempre elegante e confiante em suas escolhas. Ele se torna um aliado de Andy, oferecendo conselhos valiosos e ajudando-a a se adaptar ao ambiente competitivo da revista. Além de sua expertise em moda, Nigel também é um personagem carismático, com uma personalidade divertida e uma pitada de sarcasmo. Sua presença no filme traz leveza e profundidade, mostrando a importância de ter apoio e amizade no meio profissional exigente da indústria da moda.
+              </p>
+              <img src="Images/ator3v.png" alt="Imagem de Nagel" style="width: 251px; height: 333px; margin-left: 200px;">
+            </div>
+          </div>
+          <div class="gray-block">
+            <div class="flex-container">
+            <img src="Images/ator3l.png" alt="Imagem de Stanley Tucci" style="width: 251px; height: 333px; margin: 50px;">
+            <h class="subtitle2" style="margin-botton: 10px;">Stanley Tucci</h>
+            <p style="max-width: 50%; font-size: 16px; font-weight: Thin; line-height: 1.5; margin-top: 200px; margin-left: -200px;">
+              Em "O Diabo Veste Prada", ele brilha no papel de Nigel, o diretor de moda da revista Runway. Sua atuação marcante traz carisma e humor ao personagem. Tucci é aclamado pela crítica e recebeu reconhecimento por sua performance no filme. Com seu talento excepcional, ele continua a encantar o público e a deixar sua marca na indústria do entretenimento.
+              </p>
+            </div>
+          </div>          
+        </div>
+
+        <div class="elenco-item" id="info4" style="display: none;">
+          <div class="red-block">
+            <h class="subtitle2">Emily</h>
+            <div class="flex-container">
+              <p style="max-width: 50%; font-size: 16px; font-weight: Thin; line-height: 1.5;">
+                Ela é a colega de trabalho de Andy na revista Runway e compartilha o mesmo desejo de sucesso profissional. Interpretada por Emily Blunt, Emily traz humor e competitividade ao filme, enquanto sua relação com Andy evolui de rivalidade para amizade. Sua atuação cativante contribui para a dinâmica do filme e torna Emily uma personagem memorável.
+              </p>
+              <img src="Images/ator4v.png" alt="Imagem de Emily" style="width: 251px; height: 333px; margin-left: 200px;">
+            </div>
+          </div>
+          <div class="gray-block">
+            <div class="flex-container">
+            <img src="Images/ator4l.png" alt="Imagem de Emily Blunt" style="width: 251px; height: 333px; margin: 50px;">
+            <h class="subtitle2" style="margin-botton: 10px;">Emily Blunt</h>
+            <p style="max-width: 50%; font-size: 16px; font-weight: Thin; line-height: 1.5; margin-top: 200px; margin-left: -200px;">
+              Nascida em 1983, em Londres, ela ganhou destaque em filmes como "O Diabo Veste Prada", onde interpretou a personagem Emily. Sua atuação carismática e cativante nesse papel rendeu elogios da crítica e a estabeleceu como uma atriz em ascensão. Blunt continuou a impressionar o público com performances notáveis em filmes como "A Jovem Rainha Vitória", "Sicario: Terra de Ninguém" e "Um Lugar Silencioso". Sua presença magnética na tela e seu talento excepcional garantem que seu sucesso na indústria do entretenimento continue a crescer.
+              </p>
+            </div>
+          </div>          
+        </div>
+
+        <div class="elenco-item" id="info5" style="display: none;">
+          <div class="red-block">
+            <h class="subtitle2">Nate</h>
+            <div class="flex-container">
+              <p style="max-width: 50%; font-size: 16px; font-weight: Thin; line-height: 1.5;">
+                Nate é o namorado de Andy no filme "O Diabo Veste Prada". Ele é um cozinheiro descontraído que inicialmente não entende a obsessão de Andy pela moda. No entanto, ele é um apoio constante para ela e representa a importância do equilíbrio entre a vida pessoal e profissional. Embora seu papel seja secundário, Nate adiciona uma dimensão afetiva à história.
+              </p>
+              <img src="Images/ator5v.png" alt="Imagem de Nate" style="width: 251px; height: 333px; margin-left: 200px;">
+            </div>
+          </div>
+          <div class="gray-block">
+            <div class="flex-container">
+            <img src="Images/ator5l.png" alt="Imagem de Adrian Grenier" style="width: 251px; height: 333px; margin: 50px;">
+            <h class="subtitle2" style="margin-botton: 10px;">Adrian Grenier</h>
+            <p style="max-width: 50%; font-size: 16px; font-weight: Thin; line-height: 1.5; margin-top: 200px; margin-left: -200px;">
+              É um ator e músico norte-americano conhecido por seu papel. Nascido em 1976, em Santa Fé, no Novo México, Grenier ganhou reconhecimento por sua atuação cativante no filme. Sua interpretação de Nate, o namorado de Andy, trouxe carisma e autenticidade ao personagem. Grenier também é conhecido por seu papel como Vincent Chase na série de televisão "Entourage". Com seu talento versátil e presença magnética na tela, Adrian Grenier continua a encantar o público e a deixar sua marca na indústria do entretenimento.
+              </p>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <section id="mais">
+    <div class="black-banner">
+      <p class="frase">"Eu amo meu trabalho, eu amo meu trabalho, eu amo meu trabalho"</p>   <!-- Configuração frase - usar padrão -->
+    </div>
+  
+    <div class="flex-container">
+      <div class="white-block">
+        <img src="Images/B1.png" style="max-height: 200px;" alt="Imagem 1">
+        <p class="curiosidade">Meryl Streep, que interpreta Miranda Priestly, não recebeu o roteiro completo antes de aceitar o papel. Ela se baseou apenas no livro original e nas primeiras cenas do filme para criar sua interpretação memorável.</p>
+      </div>
+  
+      <div class="white-b-block">
+        <img src="Images/B2.png" style="max-height: 200px;" alt="Imagem B2">
+        <p class="curiosidade">Gisele Bündchen faz uma participação especial no filme "O Diabo Veste Prada" como Serena, uma colega de trabalho e amiga de Emily. Sua presença traz ainda mais glamour e autenticidade ao mundo da moda retratado no filme.</p>
+      </div>
+
+      <div class="white-block">
+        <img src="Images/B3.png" style="max-height: 200px;" alt="Imagem B3">
+        <p class="curiosidade">Para criar os visuais deslumbrantes do filme, foram usados mais de 100 figurinos, incluindo peças de alta costura de designers renomados como Chanel e Prada. O trabalho de figurino foi tão impressionante que o filme recebeu uma indicação ao Oscar nessa categoria.</p>
+      </div>
+  
+      <div class="white-b-block">
+        <img src="Images/B4.png" style="max-height: 200px;" alt="Imagem B4">
+        <p class="curiosidade">
+          Durante as filmagens Meryl Streep improvisou algumas de suas falas icônicas, como "Isso não é um pedido, é uma ordem". Esses momentos espontâneos adicionaram um toque especial à sua interpretação brilhante de Miranda Priestly.</p>
+      </div>
+    </div>
+    
+  </section>
+
+  <section id="moda">   <!-- Moda - Fotos estão com erro, nem cristo resolve -->
+    <div class="black-banner">
+      <p class="frase">"Oh, me desculpe, você tem algum compromisso mais importante? Alguma convenção de fãs de saias horrendas?"</p>
+    </div>
+
+    <div class="red-block" style="width: 1800px; height: 500px">
+      <h2 class="title" style="color: #8c1414;">MODA</h2>
+      <p class="subtitle">looks do filme</p>
+      <div class="content">
+        <div class="text">
+          <p>Os looks apresentados são verdadeiramente deslumbrantes e enchem os olhos dos espectadores.</p>
+        </p>Desde os figurinos elegantes e sofisticados usados por Miranda Priestly, até os estilos mais ousados e</p>
+            <p>vanguardistas usados por Andy Sachs, cada peça de roupa é cuidadosamente selecionada para transmitir</p>
+            <p>personalidade, status e tendências da indústria da moda. Os vestidos deslumbrantes, os ternos bem</p>
+            <p>cortados, os sapatos de luxo e os acessórios sofisticados compõem um verdadeiro desfile de moda ao longo</p>
+            <p>do filme. O trabalho do figurinista Patricia Field merece destaque, pois ela foi capaz de capturar</p>
+            <p>perfeitamente o glamour e a autenticidade da moda, garantindo que cada personagem brilhasse em sua</p>
+            <p>própria singularidade. A moda se torna uma forma de expressão e poder, elevando ainda mais a atmosfera</p>
+            <p>do filme e deixando uma marca duradoura na memória dos espectadores.</p>
+          <div class="image-gallery2">   <!-- Tive de quebrar os escritos para a imagem alinhar á direita -->
+            <img src="Images/ModaL1.png" alt="Imagem 1" style="max-width: 700px; margin-right: 20px; margin-left: 800px; margin-top: -400px;">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="gray-block">
+      <h2 class="title" style="color: #0000002a;">MODA</h2>
+      <p class="subtitle" style="color: #bf0a0a;">para você!</p>
+      <div class="text" style="color: #000000;">
+        <div class="image-gallery" style="justify-content: right; max-width: 200px">   <!-- NÃO FICA ALINHADA -->
+          <div>
+            <img src="Images/MS1.png" alt="Imagem 1">
+            <img src="Images/MS2.png" alt="Imagem 2">
+            <img src="Images/MS3.png" alt="Imagem 3">
+            <img src="Images/MS4.png" alt="Imagem 4">
+          </div>
+        </div>
+        <div class="text" style="color: #000000;">
+          <p>Descubra um universo de estilo e tendências visitando sites especializados em moda! Essas plataformas oferecem dicas especiais, conselhos de especialistas e insights sobre as últimas tendências. Explore blogs, revistas online e tutoriais de moda, maquiagem e cuidados com a pele para aprimorar seu estilo pessoal e descobrir novas marcas. Seja buscando inspiração diária ou conselhos práticos, esses sites são uma fonte valiosa para os amantes da moda que desejam expandir seus conhecimentos e criar um guarda-roupa único e atualizado.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="sobre">   <!-- Funcionando ok, não consegui alinhar á esquerda algumas infos. -->
+    <footer class="footer">
+      <p>Sobre o projeto</p>
+      <p>Redes sociais do IFSC Campus Palhoça:</p>
+      <ul>
+        <li>Facebook: <a class="footer-link" href="https://www.facebook.com/ifsc.palhoca/">IFSC Campus Palhoça</a></li>
+        <li>Instagram: <a class="footer-link" href="https://www.instagram.com/ifsc.palhoca/">@ifsc.palhoca</a></li>
+        <li>Twitter: <a class="footer-link" href="https://twitter.com/IFSCPALHOCA">@IFSCPALHOCA</a></li>
+      </ul>
+      <p>Assista ao filme "O Diabo Veste Prada" no <a class="footer-link" href="https://exemplo.com/filme">site de streaming</a>.</p>
+    </footer>
+  </section>
+
+</body>
+</html>
+
+<script>
+    function mostrarInfo(id) {
+      // Oculta todas as informações do elenco
+      var elencoItems = document.getElementsByClassName('elenco-item');
+      for (var i = 0; i < elencoItems.length; i++) {
+        elencoItems[i].style.display = 'none';
+      }
+  
+      // Exibe as informações do ator selecionado
+      var info = document.getElementById('info' + id);
+      info.style.display = 'block';
+    }
+  
+    // Exibe o ator 1 por padrão
+    function funcaoObras(infoId) {
+    var filmeBlock = document.querySelector('#obra .film-block');
+    var livroBlock = document.querySelector('#obra .book-block');
+
+    if (infoId === 'filme') {
+      filmeBlock.classList.toggle('open');
+      livroBlock.classList.remove('open');
+    } else if (infoId === 'livro') {
+      livroBlock.classList.toggle('open');
+      filmeBlock.classList.remove('open');
+    }
+  }
+
+  //Só cristo sabe o que isso faz  (Copia-cola)
+  (function() {
+      var carousel = document.querySelector('.carousel');
+      var carouselContent = document.querySelector('.carousel-content');
+      var slides = document.querySelectorAll('.carousel-slide');
+      var slideWidth = slides[0].offsetWidth;
+      var currentIndex = 0;
+
+      carouselContent.style.transform = 'translateX(0)';
+
+      function goToSlide(index) {
+        carouselContent.style.transform = 'translateX(-' + (slideWidth * index) + 'px)';
+        currentIndex = index;
+      }
+
+      function slideNext() {
+        if (currentIndex < slides.length - 1) {
+          goToSlide(currentIndex + 1);
+        } else {
+          goToSlide(0);
+        }
+      }
+
+      setInterval(slideNext, 3000);
+    })();
+  </script>
