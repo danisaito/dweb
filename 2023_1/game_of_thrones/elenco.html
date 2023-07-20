@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elenco</title>
+    <link rel="stylesheet" href="elenco.css">
+    <link rel="shortcut icon" href="imagem/71GfBaZ21bL._AC_UY1000_-removebg-preview-_1_.ico" type="image/x-icon">
+
+</head>
+<body>
+    
+    <audio id="musica" src="audio/X2Download.app-05 - Valar Morghulis - Game of Thrones Season 2 Soundtrack(720p).mp4" preload="auto">
+        <style>
+          #musica{
+            display: none;
+          }
+        </style>
+        <script>
+          let html = document.querySelector("html");
+          let musica = document.querySelector("#musica");
+          html.addEventListener('click', () =>{
+            musica.play();
+          })
+        </script>
+      </audio>
+  
+      <nav class="sidebar">
+        <div class="sidebar-inner">
+          <header class="sidebar-header">
+            <button
+              type="button"
+              class="sidebar-burger"
+              onclick="toggleSidebar()"
+            ></button>
+          </header>
+          <nav class="sidebar-menu">
+            <button type="button">
+              <img src="./assets/house-door.svg" />
+              <a href="index.html">Home</a>
+            </button>
+            <button type="button" class="has-border">
+              <img src="./assets/play-circle.svg" />
+              <a href="Episodios.html">Episódios</a>
+            </button>
+            <button type="button">
+              <img src="./assets/shield-fill.svg" />
+              <a href="Casas.html">Casas</a>
+            </button>
+            <button type="button">
+              <img src="./assets/grid.svg" />
+              <a href="Elenco.html">Elenco</a>
+            </button>
+            <button type="button" class="has-border">
+              <img src="assets.casas/medium.svg" />
+              <a href="curiosidade.html">Curiosidade</a>
+            </button>
+            </button>
+          </nav>
+        </div>
+      </nav>
+  
+      <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+      </script>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/img2.png.jpg" alt="">
+        <h3>Jon Snow</h3>
+    </div>
+    <div class="face back">
+        <p>Nós olhamos para as mesmas estrelas e vemos coisas tão diferentes.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/danny.png" alt="">
+        <h3>Daenerys Targaryen</h3>
+    </div>
+    <div class="face back">
+        <p>Dracarys.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/sansa.stark.jpeg" alt="">
+        <h3>Sansa Stark</h3>
+    </div>
+    <div class="face back">
+        <p>Quando a neve cai e os ventos brancos sopram, o lobo solitário morre, mas a matilha sobrevive.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/img13png.jpg" alt="">
+        <h3>Robert Baratheon </h3>
+    </div>
+    <div class="face back">
+        <p>É um truque bacana que você faz. Você mexe os lábios e a voz de seu pai sai.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/img14.png.jpeg" alt="">
+        <h3>Robb Stark</h3>
+    </div>
+    <div class="face back">
+        <p> Como pode um homem ser valente, se ele tem medo? Essa é a única vez que um homem pode ser corajoso.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/img15.png.jpg" alt="">
+        <h3>Theon Greyjoy</h3>
+    </div>
+    <div class="face back">
+        <p>O que está morto não pode morrer.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/img16.png.jpeg" alt="">
+        <h3>Tyrion Lannister</h3>
+    </div>
+    <div class="face back">
+        <p>Uma mente precisa de livros como uma espada precisa de uma pedra de amolar.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/img17.png.jpeg" alt="">
+        <h3>Cercei Lannister</h3>
+    </div>
+    <div class="face back">
+        <p>Quando você joga o jogo dos tronos, você vence ou morre. Não há meio-termo.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/img18.png.png" alt="">
+        <h3>Catelyn Stark</h3>
+    </div>
+    <div class="face back">
+        <p>O riso é um veneno para o medo.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/t83.webp" alt="">
+        <h3>Bran tark</h3>
+    </div>
+    <div class="face back">
+        <p>Quando chegou a minha vez, eu pedia que a Velha Ama nos falasse sobre magia e monstros.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/img11.png.jpeg" alt="">
+        <h3>Ned Stark</h3>
+    </div>
+    <div class="face back">
+        <p>O inverno está chegando.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+            
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/img4.png.jpg" alt="">
+        <h3>Arya Stark</h3>
+    </div>
+    <div class="face back">
+        <p>Nada não é melhor ou pior do que qualquer coisa. Nada é simplesmente nada.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/img5.png.jpeg" alt="">
+        <h3>Jaime</h3>
+    </div>
+    <div class="face back">
+        <p>As coisas que eu faço por amor.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/img68.png.jpg" alt="">
+        <h3>Littlefinger</h3>
+    </div>
+    <div class="face back">
+        <p>É apenas admitindo o que somos que conseguimos o que queremos.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/t2.8.jpg" alt="">
+        <h3>Jaqen H'ghar</h3>
+    </div>
+    <div class="face back">
+        <p>Valar Morghulis.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/t410.jpg" alt="">
+        <h3>Sandor Clegane</h3>
+    </div>
+    <div class="face back">
+        <p>Foda-se a Guarda Real. Foda-se a cidade. Foda-se o rei.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/varys-game-of-thrones-season-7-4k.jpg" alt="">
+        <h3>Varys</h3>
+    </div>
+    <div class="face back">
+        <p>As tempestades vêm e vão, os peixes grandes comem os peixinhos e eu continuo remando.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem/img7.png.jpg" alt="">
+        <h3>Jorah Mormont</h3>
+    </div>
+    <div class="face back">
+        <p>Eles são dragões, Khaleesi. Eles nunca podem ser domesticados. Nem mesmo por sua mãe.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/davos.jpg" alt="">
+        <h3>Davos Seaworth</h3>
+    </div>
+    <div class="face back">
+        <p>Acho que mães e pais inventaram os deuses porque queriam que seus filhos dormissem a noite inteira.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem/brienne.png" alt="">
+        <h3>Brienne</h3>
+    </div>
+    <div class="face back">
+        <p>E toda a minha vida eu estive derrubando homens como você na poeira.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/staniss.jpg" alt="">
+        <h3>Staniss Baratheon</h3>
+    </div>
+    <div class="face back">
+        <p>Mostre muita bondade, as pessoas não temerão você. Se não o temem, não o seguem.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/patrulha.jpg" alt="">
+        <h3>Tormund</h3>
+    </div>
+    <div class="face back">
+        <p>Tormund, Terror dos Gigantes, soa melhor do que Tormund, Bebê de Gigante, e esta é a verdade verdadeira.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/Eddison-Tollett.jpg" alt="">
+        <h3>Eddison Tollett</h3>
+    </div>
+    <div class="face back">
+        <p>Quem morrer por último, seja um bom rapaz e queime o resto de nós. Não quero voltar.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/milisandre.jpg" alt="">
+        <h3>Milisandre</h3>
+    </div>
+    <div class="face back">
+        <p>A noite é escura e cheia de horrores.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/osha.jpg" alt="">
+        <h3>Osha</h3>
+    </div>
+    <div class="face back">
+        <p>Os gigantes que eu vi, as crianças sobre as que eu ouvi falar, e os caminhantes brancos...</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/Martell.jpg" alt="">
+        <h3>Oberyn Martell</h3>
+    </div>
+    <div class="face back">
+        <p>É um mundo grande e bonito. A maioria de nós vive e morre no mesmo lugar onde nasceu.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/lyanna.jpg" alt="">
+        <h3>Lyanna Mormont</h3>
+    </div>
+    <div class="face back">
+        <p> Eu não me importo de ele ser um bastardo. O sangue de Ned Stark corre em suas veias. Ele é meu rei.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/bron.webp" alt="">
+        <h3>Bronn</h3>
+    </div>
+    <div class="face back">
+        <p>Eu luto pelo anão.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/ransay.webp" alt="">
+        <h3>Ramsay Snow</h3>
+    </div>
+    <div class="face back">
+        <p>Se você acha que isso tem um final feliz, não tem prestado atenção.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="card">
+    <div class="face front">
+        <img src="imagem.casas/dormer.jpeg.jpg" alt="">
+        <h3>Margaery Tyrell</h3>
+    </div>
+    <div class="face back">
+        <p>Eu quero ser A rainha.</p>
+        <div class="link">
+            <a href="elenco2.html">Detalhe</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

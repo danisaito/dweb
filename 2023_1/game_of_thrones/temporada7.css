@@ -1,0 +1,156 @@
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .sidebar {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 100%;
+    background: rgba(12, 9, 9, 0.8);
+    transition: width 0.4s;
+    background-image: url(imagem.ep/vagante.olho.png);
+    position: fixed;
+  }
+  
+  .sidebar-menu a{
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .sidebar-menu a:hover{
+    text-decoration: underline;
+  }
+  
+  body.open .sidebar {
+    width: 260px;
+  }
+  
+  .sidebar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    padding: 0 1.25rem 0 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-burger {
+    width: 72px;
+    height: 72px;
+    display: grid;
+    place-items: center;
+    background: url(./assets/icon-burger.svg) no-repeat center center;
+  }
+  
+  body.open .sidebar-burger {
+    background: url(./assets/icon-close.svg) no-repeat no-repeat center center;
+  }
+  
+  .sidebar-logo {
+    height: 20px;
+  }
+  
+  .sidebar-menu {
+    display: grid;
+  }
+  
+  .sidebar-menu > button {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 60px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 0 25px;
+  }
+  
+  .sidebar-menu > button.has-border {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar-menu > button > img {
+    width: 24px;
+    height: 24px;
+    filter: invert();
+  
+  }
+  
+  .sidebar-menu > button > span {
+    color: #f9f9f9;
+  }
+  
+  .h1{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .h2{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7.5vh;
+    text-align: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .h1:hover{
+    text-decoration:underline;
+  }
+  
+
+body{
+    background-image: url(imagem.casas/Home\ \(18\).png);
+    margin: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+
+.video{
+    
+    align-items: center;
+    display: flex;
+    margin-left: 50px;
+ 
+}
+
+.ph{
+    color: white;
+    margin: 40px;
+    margin-left: 80px;
+    font-size: 90%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.p{
+    margin-left: 50px;
+    align-items: center;
+    font-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+    

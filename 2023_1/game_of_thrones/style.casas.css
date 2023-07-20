@@ -1,0 +1,494 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+     margin: 0;
+     background-image: url(imagem.casas/casa.lobos.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+   
+  }
+
+ .stark{
+  background-image: url(imagem.casas/castelo.stark.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  
+ 
+ }
+ .stark-img{
+  align-items: center;
+  justify-content: center;
+  margin-left: 8%;
+ }
+ .stark h3{
+  align-items:right;
+  justify-content: right;
+  display: flex;
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ 
+ .icone-stark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: invert();
+}
+
+
+
+.targaryen{
+  background-image: url(imagem.casas/Home\ \(19\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+
+ 
+ }
+ .targaryen-img{
+  align-items: center;
+  justify-content: center;
+  margin-left: 8%;
+ }
+ .targaryen h3{
+  align-items:right;
+  justify-content: right;
+  display: flex;
+  color: #fff;
+  font-size: 13px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ 
+ .icone-targaryen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: invert();
+}
+
+.lannister{
+  background-image: url(imagem.casas/Home\ \(9\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  
+ 
+ 
+ }
+ .lannister-img{
+  align-items: center;
+  justify-content: center;
+  margin-left: 8%;
+ }
+ .lannister h3{
+  align-items:right;
+  justify-content: right;
+  display: flex;
+  color: #fff;
+  font-size: 13px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-right: 80px;
+ }
+ 
+ .icone-lannister{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: invert();
+}
+
+.greyjoy{
+  background-image: url(imagem.casas/Home\ \(12\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+
+ 
+ }
+ .greyjoy-img{
+  align-items: center;
+  justify-content: center;
+  margin-left: 8%;
+ }
+ .greyjoy h3{
+  align-items:right;
+  justify-content: right;
+  display: flex;
+  color: #fff;
+  font-size: 13px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-right: 30px;
+ }
+ 
+ .icone-greyjoy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: invert();
+}
+
+
+.baratheon{
+  background-image: url(imagem.casas/Home\ \(20\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+ 
+ 
+ }
+ .baratheon-img{
+  align-items: center;
+  justify-content: center;
+  margin-left: 8%;
+ }
+ .baratheon h3{
+  align-items:right;
+  justify-content: right;
+  display: flex;
+  color: #fff;
+  font-size: 13px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ 
+ .icone-baratheon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: invert();
+}
+
+ 
+
+  button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .tully{
+    background-image: url(imagem.casas/Home\ \(22\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+   
+   }
+   .tully-img{
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
+   }
+   .tully h3{
+    align-items:right;
+    justify-content: right;
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   
+   .icone-tully{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert();
+  }
+
+  
+  .martell{
+    background-image: url(imagem.casas/Home\ \(23\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+   
+   
+   }
+   .martell-img{
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
+   }
+   .martell h3{
+    align-items:right;
+    justify-content: right;
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   
+   .icone-martell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert();
+  }
+  
+  .arryn{
+    background-image: url(imagem.casas/Home\ \(24\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+   
+   
+   }
+   .arryn-img{
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
+    
+   }
+   .arryn h3{
+    align-items:right;
+    justify-content: right;
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 10px;
+   }
+   
+   .icone-arryn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert();
+  }
+
+  
+  .tyrell{
+    background-image: url(imagem.casas/Home\ \(21\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    
+   
+   }
+   .tyrell-img{
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
+   }
+   .tyrell h3{
+    align-items:right;
+    justify-content: right;
+    display: flex;
+    color: #fff;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 25px;
+   }
+   
+   .icone-tyrell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert();
+  }
+  
+   
+  
+    button {
+      background: transparent;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+    
+  
+  .sidebar {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 100%;
+    background: rgba(12, 9, 9, 0.8);
+    transition: width 0.4s;
+    background-image: url(imagem.casas/fantasma.jpg);
+  }
+  
+  body.open .sidebar {
+    width: 260px;
+  }
+  
+  .sidebar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    padding: 0 1.25rem 0 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar-burger {
+    width: 72px;
+    height: 72px;
+    display: grid;
+    place-items: center;
+    background: url(./assets/icon-burger.svg) no-repeat center center;
+  }
+  
+  body.open .sidebar-burger {
+    background: url(./assets/icon-close.svg) no-repeat no-repeat center center;
+  }
+  
+  .sidebar-logo {
+    height: 20px;
+  }
+  
+  .sidebar-menu {
+    display: grid;
+  }
+  
+  .sidebar-menu > button {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 60px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 0 25px;
+  }
+  .sidebar-menu a{
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .sidebar-menu a:hover{
+    text-decoration:underline;
+  }
+  
+  .sidebar-menu > button.has-border {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar-menu > button > img {
+    width: 24px;
+    height: 24px;
+    filter: invert();
+  
+  }
+  
+  .sidebar-menu > button > span {
+    color: #f9f9f9;
+  }
+  .sidebar-menu:hover{
+    
+    color: #fff;
+  }
+
+.house-lists{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+    
+}
+.house{
+    position: relative;
+    overflow: hidden;
+    width: 4px;
+    height: 400px;
+    background-position: center;
+    border-radius: 10px;
+    margin: 5px;
+
+    -webkit-box-shandow: 0,0 10px -1px rgba(255,255, 255,1);
+    -moz-box-shandow: 0 0 -10px -1px rgba(255,255, 255,1);
+    box-shadow: 0 0 -10px -1px rgba(255,255, 255,1);
+     min-width:70px;
+     background-size: auto 110%;
+     transition: .5s ease;
+}
+.house:hover{
+    min-width: 600px;
+    background-size: auto 100%;
+    border-radius: 10px;
+}
+.sigil{
+    min-height: 100px;
+    text-align: center;
+    position:relative;
+    bottom: 10px;
+}
+.sigil img{
+filter: brightness(0) invert(1);
+max-height: 70px;
+max-width: 70px;
+
+}
+.house-inner{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.house::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    transition: .5s ease;
+}
+.house:hover::before{
+    background: none;
+}
+.house-name{
+    color: #fff;
+    transform: rotate(-90deg);
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    max-width: 100px;
+    margin-bottom: 100px;
+}
+.house:hover .house-name{
+    transform: rotate(0deg);
+    margin-bottom: 3%;
+    margin-left: 30%;
+
+}

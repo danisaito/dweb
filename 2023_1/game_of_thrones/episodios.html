@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Episódios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.ep.css">
+    <link rel="shortcut icon" href="imagem/71GfBaZ21bL._AC_UY1000_-removebg-preview-_1_.ico" type="image/x-icon">
+  </head>
+  <body>
+
+    <audio id="musica" src="./audio/X2Download.app-20 - Small Pack of Wolves - Game of Thrones Season 1 Soundtrack(720p).mp4" preload="auto">
+      <style>
+        #musica{
+          display: none;
+        }
+      </style>
+      <script>
+        let html = document.querySelector("html");
+        let musica = document.querySelector("#musica");
+        html.addEventListener('click', () =>{
+          musica.play();
+        })
+      </script>
+    </audio>
+
+    <nav class="sidebar">
+      <div class="sidebar-inner">
+        <header class="sidebar-header">
+          <button
+            type="button"
+            class="sidebar-burger"
+            onclick="toggleSidebar()"
+          ></button>
+        </header>
+        <nav class="sidebar-menu">
+          <button type="button">
+            <img src="./assets/house-door.svg" />
+            <a href="index.html">Home</a>
+          </button>
+          <button type="button" class="has-border">
+            <img src="./assets/play-circle.svg" />
+            <a href="Episodios.html">Episódios</a>
+          </button>
+          <button type="button">
+            <img src="./assets/shield-fill.svg" />
+            <a href="Casas.html">Casas</a>
+          </button>
+          <button type="button">
+            <img src="./assets/grid.svg" />
+            <a href="Elenco.html">Elenco</a>
+          </button>
+          <button type="button" class="has-border">
+            <img src="assets.casas/medium.svg" />
+            <a href="curiosidade.html">Curiosidade</a>
+          </button>
+          </button>
+        </nav>
+      </div>
+    </nav>
+
+    <script type="text/javascript">
+      const toggleSidebar = () => document.body.classList.toggle("open");
+    </script>
+
+<div class="h2">I</div>
+<a class="h1" href="temporada1.html">Temporada I</a><p>
+
+  <div class="h2">II</div>
+<a class="h1" href="temporada2.html">Temporada II</a><p>
+
+  <div class="h2">III</div>
+<a class="h1" href="temporada3.html">Temporada III</a><p>
+
+  <div class="h2">IV</div>
+<a class="h1" href="temporada4.html">Temporada IV</a><p>
+
+  <div class="h2">V</div>
+<a class="h1" href="temporada5.html">Temporada V</a><p>
+
+  <div class="h2">VI</div>
+<a class="h1" href="temporada6.html">Temporada VI</a><p>
+
+  <div class="h2">VII</div>
+<a class="h1" href="temporada7.html">Temporada VII</a><p>
+
+  <div class="h2">VIII</div>
+<a class="h1" href="temporada8.html">Temporada VIII</a><p>
+
+  </body>
+</html>

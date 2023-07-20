@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greyjoy</title>
+    <link rel="stylesheet" href="style.casas.css">
+    <link rel="shortcut icon" href="imagem.casas/simbolo_greyjoy-removebg-preview.ico" type="image/x-icon">
+</head>
+<body>
+    
+  <audio id="musica" src="audio/X2Download.app - 05  - The King_s Arrival - Game of Thrones Season 1 Soundtrack (128 kbps).mp3" preload="auto">
+    <style>
+      #musica{
+        display: none;
+      }
+    </style>
+    <script>
+      let html = document.querySelector("html");
+      let musica = document.querySelector("#musica");
+      html.addEventListener('click', () =>{
+        musica.play();
+      })
+    </script>
+  </audio>
+
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+          <header class="sidebar-header">
+            <button
+              type="button"
+              class="sidebar-burger"
+              onclick="toggleSidebar()"
+            ></button>
+          </header>
+          <nav class="sidebar-menu">
+            <button type="button">
+              <img src="assets/house-door.svg" />
+              <a href="index.html">Home</a>
+            </button>
+            <button type="button" class="has-border">
+              <img src="assets/play-circle.svg"/>
+              <a href="episodios.html">Episódios</a>
+            </button>
+            <button type="button">
+              <img src="assets/shield-fill.svg" />
+              <a href="casas.html">Casas</a>
+            </button>
+            <button type="button">
+              <img src="assets/grid.svg" />
+              <a href="elenco.html">Elenco</a>
+            </button>
+            <button type="button" class="has-border">
+              <img src="assets.casas/medium.svg" />
+            <a href="curiosidade.html">Curiosidade</a>
+            </button>
+            </button>
+          </nav>
+        </div>
+      </nav>
+  
+      <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+      </script>
+    
+
+   <div class="greyjoy">
+   <div class="greyjoy-img">
+        <img src="imagem.casas/0b2ad29959faa4018ff8906363679a24.png" alt="" width="250px">
+      </div>
+     
+      <div class="icone-greyjoy">
+       <img src="imagem.casas/greyjoy.sigil-removebg-preview.png" alt="" width="20%" >
+      </div>
+        <h3>"O que está morto não pode morrer, mas volta a se erguer, mais duro e mais forte." - Aeron Greyjoy</h3>
+   
+    
+
+</body>
+</html>

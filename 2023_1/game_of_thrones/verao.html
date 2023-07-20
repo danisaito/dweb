@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verão</title>
+    <link rel="shortcut icon" href="imagem.casas/simbolo_stark-removebg-preview.ico" type="image/x-icon">
+    <link rel="stylesheet" href="verao.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+          <header class="sidebar-header">
+            <button
+              type="button"
+              class="sidebar-burger"
+              onclick="toggleSidebar()"
+            ></button>
+          </header>
+          <nav class="sidebar-menu">
+            <button type="button">
+              <img src="./assets/house-door.svg" />
+              <a href="index.html">Home</a>
+            </button>
+            <button type="button" class="has-border">
+              <img src="./assets/play-circle.svg" />
+              <a href="Episodios.html">Episódios</a>
+            </button>
+            <button type="button">
+              <img src="./assets/shield-fill.svg" />
+              <a href="Casas.html">Casas</a>
+            </button>
+            <button type="button">
+              <img src="./assets/grid.svg" />
+              <a href="Elenco.html">Elenco</a>
+            </button>
+            <button type="button" class="has-border">
+              <img src="assets.casas/medium.svg" />
+              <a href="curiosidade.html">Curiosidade</a>
+            </button>
+            </button>
+          </nav>
+        </div>
+      </nav>
+      <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+      </script>
+
+<audio id="musica" src="audio/X2Download.app-09 - Things I Do For Love - Game of Thrones Season 1 Soundtrack(720p).mp4" preload="auto">
+  <style>
+    #musica{
+      display: none;
+    }
+  </style>
+  <script>
+    let html = document.querySelector("html");
+    let musica = document.querySelector("#musica");
+    html.addEventListener('click', () =>{
+      musica.play();
+    })
+  </script>
+</audio>
+
+<div class="text-center">
+  <img src="imagem.casas/game-of-thrones-bran.gif">
+  <h1><p>1ª TEMPORADA</p></h1>
+  <p>Verão é o lobo gigante de Bran Stark. Sempre muito fiel, tem uma ligação misteriosa com Bran, compartilhando visões e até mesmo sentimentos.</p>
+  <img src="imagem.casas/veraoebran.webp" width="60%" alt="">
+   <h1><p>6ª TEMPORADA</p></h1>
+    <p>Verão permanece na caverna com o grupo. Após Bran ser tocado pelo Rei da Noite, os caminhantes brancos atacam a caverna, agora desprovida da magia que os impediam de entrar. Verão salva Meera de uma das criaturas, e embora ela o chame quando está fugindo, Verão se sacrifica atacando as criaturas que continuam entrando na caverna, e dando tempo para que Bran e os outros pudessem fugir.
+      <img src="imagem.casas/Verão.jpg" width="60%" alt="">
+  </div>
+
+
+</body>
+</html>

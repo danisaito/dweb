@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arryn</title>
+    <link rel="stylesheet" href="style.casas.css">
+    <link rel="shortcut icon" href="imagem.casas/simbolo_tully-removebg-preview.ico" type="image/x-icon">
+</head>
+<body>
+    
+  <audio id="musica" src="audio/X2Download.app - 05  - The King_s Arrival - Game of Thrones Season 1 Soundtrack (128 kbps).mp3" preload="auto">
+    <style>
+      #musica{
+        display: none;
+      }
+    </style>
+    <script>
+      let html = document.querySelector("html");
+      let musica = document.querySelector("#musica");
+      html.addEventListener('click', () =>{
+        musica.play();
+      })
+    </script>
+  </audio>
+
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+          <header class="sidebar-header">
+            <button
+              type="button"
+              class="sidebar-burger"
+              onclick="toggleSidebar()"
+            ></button>
+          </header>
+          <nav class="sidebar-menu">
+            <button type="button">
+              <img src="assets/house-door.svg" />
+              <a href="index.html">Home</a>
+            </button>
+            <button type="button" class="has-border">
+              <img src="assets/play-circle.svg"/>
+              <a href="episodios.html">Episódios</a>
+            </button>
+            <button type="button">
+              <img src="assets/shield-fill.svg" />
+              <a href="casas.html">Casas</a>
+            </button>
+            <button type="button">
+              <img src="assets/grid.svg" />
+              <a href="elenco.html">Elenco</a>
+            </button>
+            <button type="button" class="has-border">
+              <img src="assets.casas/medium.svg" />
+            <a href="curiosidade.html">Curiosidade</a>
+            </button>
+            </button>
+          </nav>
+        </div>
+      </nav>
+  
+      <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+      </script>
+    
+
+   <div class="arryn">
+   <div class="arryn-img">
+        <img src="imagem.casas/36368c706608c61366eeea5cfc00212f.png" alt="" width="400px">
+      </div>
+     
+      <div class="icone-arryn">
+       <img src="imagem.casas/arryn.sigil-removebg-preview.png" alt="" width="50%" >
+      </div>
+        <h3>"Um homem dirá que o veneno é desonroso, mas a honra de uma mulher é diferente. A Mãe nos moldou para proteger nossos filhos, e nossa única desonra está no fracasso."
+             - Lyys Arryn</h3>
+   
+
+
+
+
+</body>
+</html>
