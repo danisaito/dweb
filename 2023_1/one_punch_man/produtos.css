@@ -1,0 +1,153 @@
+@font-face{
+    font-family: 'League Spartan';
+    src:url('LeagueSpartan-VariableFont_wght.ttf')
+  }
+  
+    body {
+      width: 1920px;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background-color: #F5EFBC;
+      padding: 0;
+      margin: 0;
+    }
+  
+    header
+    {
+      background-color: #ffffff;
+      padding: 0;
+      height: 150px;
+      position: fixed;
+      top: 0;
+      width: 1920px;
+      box-shadow: 0px 3px 10px 1px; color: black;
+  
+    }
+    #logo{
+      width: 300px;
+      position: absolute;
+      top: 0px;
+      left: 800px;
+    }
+  
+    nav { 
+      width: 100%;
+      display: flex;
+      justify-content:center;
+    }
+  
+    nav h1
+    {
+      position: absolute;    
+    }
+  
+    #btinicio{
+      background-color: black;
+      color: rgb(255, 255, 255);
+      border-radius: 20px;
+      padding: 25px; 
+      font-family: 'League Spartan';
+      font-size: 30px;
+      text-decoration: none;
+    
+  
+    }
+    
+  
+    nav ul, nav li
+    {
+      display: inline;
+      font-family: 'League Spartan';
+      font-size: 20px;
+      padding: 90px 148px;
+    
+    
+    }
+    
+   a:link {
+      color: black;
+    }
+  
+    a:visited{
+      color: black;
+    }
+  
+    a:hover {
+      color: red;
+      transition-duration: 1000ms;
+    }
+  
+    a:active {
+      color: red;
+    }
+  
+    nav li a{
+      text-decoration: none;
+    }
+  
+    h1
+    {
+      color:white;
+      font-family: 'League Spartan';
+      padding: 10px;
+    }
+    
+    
+    p{
+      color:white;
+      font-family: 'League Spartan';
+      padding: 10px;
+      margin: 20px;
+    }
+
+@import url(file:///C:/Users/camil/OneDrive/Documentos/ian/desenvolvimento%20web/Produtos.html);
+
+*.heading{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: 0; border: 0;
+  font-family: 'League Spartan', cursive;
+  font-family: 'League Spartan', cursive;
+  transition: all 0.2s linear;
+}
+.container{
+  width: 1300px;
+  margin: 140px;
+}
+.container .heading{
+   font-size:3.2rem;
+   color: #333;
+   margin: bottom 0rem;
+   padding: 5rem;
+   text-align: center;
+}
+.container .menu-container{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(16%, 1fr));
+  gap: 8.5rem ;
+  margin-bottom: 5rem;
+}
+.container .menu-container .menu{
+    text-align: center;
+    padding: 0.10rem;
+    background: #fff;
+    box-shadow:  0 0.01rem 1rem rgba(0, 0, 0, 0.3);
+    outline: 0.01rem solid #ccc;
+    outline-offset: -0.01rem;
+    cursor: pointer;
+}
+.container .menu-container .menu:hover{
+    outline-offset: -0rem;
+}
+.container .menu-container .menu img{
+    width: 100%;
+}
+.container .menu-container .menu img:hover{
+    transform: scale(90%);
+    transition-duration: 0.5s;
+    transition: ease-out;
+
+}
